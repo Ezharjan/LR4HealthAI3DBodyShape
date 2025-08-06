@@ -1,0 +1,329 @@
+% Template version as of 6/27/2024
+\documentclass[conference, 12pt]{IEEEtran} 
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{csquotes}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome}
+\usepackage{cleveref}
+
+\crefformat{figure}{Fig.~#2#1#3}
+
+\begin{document}
+
+\title{
+Literature Review on 3D Body Shape Analysis \\
+for Disease Prediction and Healthcare 
+}
+
+\author{
+\IEEEauthorblockN{
+Anonymous Submission
+}
+
+% \IEEEauthorblockN{
+% % 1\textsuperscript{st}
+% Aizierjiang Aiersilan
+% % \textsuperscript{\href{mailto:xxx@example.com}
+% % {\faEnvelopeO}
+% % }\
+% }
+% \IEEEauthorblockA{
+% % \textit{Faculty of Science and Technology} \
+% University of Example\
+% City, State\
+% example@xxx.edu
+% }
+
+% \and
+
+% \IEEEauthorblockN{
+% % 2\textsuperscript{nd}
+% XXXXX XXXXX
+% }
+% \IEEEauthorblockA{
+% % \textit{Faculty of xxxxxxx xxxxxx} \
+% XXXXX XXXXX \
+% City, Country\
+% xxxxx@xxxxx.cn
+% }
+
+}
+\maketitle
+
+\begin{abstract}
+This paper proposes a novel approach to enhancing the safety of autonomous vehicles by integrating ...
+\end{abstract}
+
+\begin{IEEEkeywords}
+UWB, autonomous driving.
+\end{IEEEkeywords}
+
+%%%%%%%%% BODY TEXT %%%%%%%%%
+\section{Introduction}
+\label{sec:intro}
+\setlength{\parindent}{0pt}
+
+Autonomous driving has emerged as a transformative technology poised to redefine transportation systems. However, achieving safe and reliable operation in diverse and dynamic environments remains a significant challenge. Current ...
+
+
+
+
+
+
+
+\section{Objectives}
+
+\begin{itemize}
+\item \textbf{Enhance xxx}: Develop an advanced xxx...
+\item \textbf{Develop xxx Framework}: Combine data from xxx...
+\end{itemize}
+
+\section{Key Research Components}
+
+\subsection{Some Sub-Mehtod Name}
+
+\begin{itemize}
+\item \textbf{Precision xxx}: Leverage xxx...
+\item \textbf{Multipath Mitigation}: Develop xxx...
+\end{itemize}
+
+\subsection{Multi-Sensor Fusion Framework}
+
+\begin{itemize}
+\item \textbf{Real-Time Data Integration}: Combine inputs from UWB, LiDAR, and cameras to provide a unified environmental model.
+\item \textbf{Resilience in Adverse Conditions}: Enhance system performance in low-visibility or high-interference scenarios by leveraging complementary strengths of different sensors.
+\end{itemize}
+
+\section{Implementation Strategy}
+
+\subsection{Simulation and Prototyping}
+
+\begin{itemize}
+\item Use high-fidelity simulators to validate algorithms for UWB RF positioning and multi-sensor fusion.
+\item Develop a prototype vehicle equipped with the proposed system for real-world testing.
+\end{itemize}
+
+\subsection{Real-World Testing}
+
+\begin{itemize}
+\item Conduct extensive field trials in diverse environments, including urban, suburban, and highway settings, to evaluate system performance.
+\end{itemize}
+
+\section{Novelty and Innovation}
+
+\begin{itemize}
+\item \textbf{Advanced xxx Applications}: Extending xxx...
+\item \textbf{Holistic Fusion Framework}: Combining diverse data sources into a coherent system to address challenges of reliability and accuracy.
+\end{itemize}
+
+\section{Anticipated Outcomes}
+
+\begin{itemize}
+\item Improved safety and reliability of autonomous driving systems in diverse environments.
+\item Enhanced situational awareness and collision avoidance capabilities.
+\item A scalable and adaptable framework suitable for integration with future autonomous driving platforms.
+\end{itemize}
+
+
+\section{Related Works}
+Recent works like \cite{cho2023mmwall} have made some attempt on...
+
+=====================================================================
+Paper 1 - Title: D3BT: Dynamic 3D Body Transformer for Body Fat Percentage Assessment
+
+Abstract
+- A new model, D3BT, utilizes a transformer-based network on a body point cloud to learn shape information for regional and global fat percentage regression tasks.
+- D3BT dynamically divides points into voxels for enhanced transformer training, providing higher density and better alignment across different subjects, making it suitable for body shape learning.
+- Compared to traditional methods, D3BT reduces the Root Mean Square Error (RMSE) by an average of 10.30\% and achieves an average R-squared score of 0.86.
+Introduction
+- 3D body scans offer an alternative for estimating body composition using inexpensive equipment to accurately capture body shape.
+- A key challenge in utilizing 3D body meshes is the extraction of body features, where effective shape descriptors are important for accurate body composition estimation.
+- D3BT adopts varying voxel sizes to create denser patches for transformer layers learning, providing better spatial alignment for the human body compared to fixed voxel sizes.
+Method
+- The model addresses the challenges of applying transformer structures to human point clouds by partitioning the unstructured points into a fixed number of voxels after local aggregation training.
+- Dynamic voxel sizes can maintain a consistent number of voxels across different body scans, providing a denser representation.
+- The structure of D3BT incorporates local aggregation layers adopted from PointNet++.
+Experiment
+- The study assesses the model’s performance using a dataset that includes both normal BMI subjects and bariatric patients.
+- The voxel number is set to 8×16×4, consistent with the training network.
+- The performance of all models is assessed with two evaluation metrics: Root Mean Square Error (RMSE) and R-squared score.
+Results and Discussion
+- Dynamic voxelization outperforms other methods with the highest density ratio of 42.03\% and the highest mIoU at 0.62, indicating superior alignment across subjects.
+- The proposed model delivers the best performance for whole-body fat percentage estimation, with the lowest RMSE of 4.22\% and the highest R-squared score of 0.89.
+- A voxel configuration of 8×16×4 achieves an optimal balance between accuracy and training efficiency.
+Conclusion
+- The model D3BT is a transformer-based neural network that dynamically partitions the body point cloud into fixed-number voxels to reduce fat percentage estimation error.
+- D3BT’s dynamic voxelization enhances voxel density and region alignment, which are important for position embedding in the transformer structure.
+- The study's limitations include the exclusion of certain populations, such as the geriatric population, and the potential variability introduced by different scanning devices.
+
+
+
+
+How does the transformer-based approach improve body fat percentage assessment?
+The transformer-based approach in the D3BT model improves body fat percentage assessment through several key mechanisms:
+1. Point Cloud Representation: Traditional methods often rely on anthropometric values derived from girth measurements, which may not fully capture the complex shape of the human body. D3BT uses a point cloud representation that retains detailed spatial information about the body's shape, allowing for a more nuanced analysis.
+2. Dynamic Voxelization: The model dynamically divides the point cloud into voxels of varying sizes. This flexible voxelization creates denser patches that enhance feature representation, enabling the transformer layers to learn relevant spatial structures more effectively compared to fixed voxel sizes. By ensuring that the patches are contextually rich, the model can capture significant geometric features that are crucial for accurate fat percentage estimation.
+3. Local Aggregation Layers: D3BT incorporates local aggregation layers that enrich point features by integrating neighborhood data. This allows the model to gather contextual information from surrounding points, enhancing the learning of critical features related to body shape and composition. This is vital because capturing local geometric characteristics improves the overall prediction performance for fat percentage.
+4. Efficient Learning: The transformer-based architecture is adept at processing high-dimensional data and can effectively learn complex patterns. By applying attention mechanisms, D3BT can focus on important regions of the body that contribute significantly to body fat estimation, improving prediction accuracy.
+5. Superior Performance Metrics: The D3BT model demonstrated a reduction in the Root Mean Square Error (RMSE) by an average of 10.30\% compared to conventional methods, coupled with an average R-squared score of 0.86. This indicates that the model not only learns effectively but also generalizes well to predict body fat percentage accurately.
+In summary, the use of a transformer-based methodology enhances the ability to analyze and predict body fat percentage by leveraging point cloud data, dynamic voxelization, local feature aggregation, and attention mechanisms, leading to better accuracy in assessments.
+
+
+
+What advantages does D3BT have over traditional anthropometric methods?
+The D3BT model offers several advantages over traditional anthropometric methods for assessing body fat percentage:
+1. Detailed Shape Analysis: D3BT utilizes a point cloud representation of the body, allowing for a more detailed capture of the body's shape compared to traditional anthropometric methods that rely on a limited number of measurements (e.g., waist, hip, and arm circumferences). This comprehensive analysis provides richer data for more accurate body fat estimation.
+2. Dynamic Voxelization: The model features dynamic voxelization, which allows it to adaptively partition the point cloud into varying sizes of voxels. This results in higher density and better spatial alignment across different subjects, enhancing the model's ability to learn shape information effectively. Traditional methods, on the other hand, often use fixed measurements that may not account for individual body shape variations.
+3. Local Context Incorporation: D3BT incorporates local aggregation layers that gather contextual information from neighboring points in the point cloud. This enables the model to capture important geometric features that might be missed in traditional methods, which primarily focus on isolated measurement points.
+4. Enhanced Prediction Accuracy: The transformer-based architecture employed in D3BT allows for the integration of advanced learning techniques, which improve the precision of fat percentage estimates. The model has demonstrated an average reduction of 10.30\% in RMSE compared to traditional measurement-based methods, indicating significantly improved accuracy.
+5. Non-Invasive and Cost-Effective: D3BT’s reliance on 3D body scans makes it a non-invasive and potentially less costly option for body fat percentage assessment compared to medical imaging techniques like MRI or DXA, which are often expensive and impractical for everyday monitoring. This aspect is particularly relevant for telehealth applications and large-scale studies.
+6. Scalability for Population Studies: Traditional anthropometric methods can be infeasible for large-scale studies due to the manual and time-consuming nature of measurements. D3BT leverages 3D scanning technology, enabling faster and more scalable assessments across diverse populations without the need for extensive manual measurement adjustments.
+7. Robustness to Variability: Traditional methods can be sensitive to changes in body composition, hydration levels, and measurement conditions. D3BT's transformer model learns from a varied dataset, which can lead to more consistent and reliable predictions, even among individuals with different body types.
+In conclusion, D3BT offers a more comprehensive, accurate, and efficient approach to body fat percentage assessment compared to traditional anthropometric methods, making it suitable for modern health monitoring and research applications.
+
+
+What are the theortical contribution of this work?
+The theoretical contributions of the D3BT (Dynamic 3D Body Transformer) work are significant in the context of body fat percentage assessment and point cloud analysis. Here are the key theoretical contributions:
+1. Integration of Point Cloud Deep Learning: D3BT represents a novel application of point cloud deep learning techniques specifically for human body analysis. This extends the application of point-based methodologies beyond traditional object classification tasks, demonstrating their viability for complex regression tasks like body fat percentage estimation.
+2. Dynamic Voxelization Methodology: The introduction of a dynamic voxelization approach offers a new framework for processing 3D body scans. This method adapts voxel sizes based on local context, enhancing the representation of spatial features crucial for transformer networks. It addresses the limitation of fixed voxel sizes used in previous approaches, leading to improved feature learning tailored to human body shapes.
+3. Contextual Feature Aggregation: By implementing local aggregation layers, D3BT enables the model to consider neighborhood contexts when learning body shape features. This methodological advancement enhances the model's ability to accurately capture geometrical details and complex spatial structures, which traditional anthropometric methods might overlook due to their reliance on isolated measurements.
+4. Attention Mechanisms for Feature Importance: The use of transformer-based attention mechanisms allows for a more nuanced understanding of which body regions are most significant in predicting fat percentage. This theoretical contribution advances the interpretation of attention scores, providing insights into human body composition while maintaining a robust performance across different body types.
+5. Performance Metrics Development: The work provides a methodology for comparing the efficacy of different models for estimating body composition using standardized metrics such as RMSE and R-squared scores. By documenting these metrics, the study establishes a benchmark for future research in the field of body composition analysis, contributing to a framework for evaluating model performance in 3D body scanning.
+6. Cross-Disciplinary Implications: The research bridges concepts from computer vision, machine learning, and biomedical informatics, demonstrating how advanced algorithms can be applied to health-related assessments. This cross-disciplinary approach could inspire further innovations in digital health technologies focused on body composition tracking and analysis.
+7. Addressing Limitations of Traditional Methods: By innovating upon conventional body composition assessment methods, D3BT theoretically challenges existing paradigms about how body fat percentage should be evaluated, proposing a more comprehensive and technologically advanced alternative that leverages modern data representation techniques.
+These theoretical contributions not only advance knowledge in the field of body composition assessment but also pave the way for future research and application of similar methodologies in diverse areas of health, fitness, and biomedical analytics.
+
+
+
+
+What are the detailed novel technics utilized in this paper?
+The paper on the Dynamic 3D Body Transformer (D3BT) introduces several novel techniques in the context of body fat percentage estimation using 3D body scans. Here are the detailed innovative techniques utilized in this study:
+1. Dynamic Voxelization:
+- D3BT employs a technique that allows for the dynamic partitioning of a point cloud into voxels with varying sizes. This adaptation is designed to enhance the granularity of representation, allowing the model to learn more informative features from the 3D scans. By not relying on fixed voxel sizes, it tailors the representation to the specific geometrical characteristics of individual bodies, which enhances feature learning,.
+1. Local Aggregation Layers:
+- The model incorporates local aggregation modules that aggregate features from neighboring points within the point cloud. This aggregation is crucial in maintaining spatial context and relationships among points, enabling the model to capture complex geometric shapes that relate to body fat distribution more effectively than methods that only consider individual points.
+1. Transformer Network Architecture:
+- D3BT utilizes a transformer-based architecture, which is well-known for its effectiveness in handling sequence data in various fields. This architecture specifically leverages self-attention mechanisms to weigh the importance of different features derived from the point cloud, enabling it to focus on critical regions of the body that contribute significantly to fat percentage estimation,.
+1. Attention Mechanisms:
+- By adopting attention mechanisms inherent in transformer architectures, D3BT can determine which parts of the body are most relevant for predicting fat percentage. This aspect of the model allows it to highlight important body regions and provide visual explanations about which features contribute most to its predictions, enhancing interpretability.
+1. Position Embeddings and Patch Creation:
+- The model implements techniques analogous to those in Vision Transformers (ViT), where spatial relationships are preserved through position embeddings added to each voxel patch. This technique ensures that the model retains spatial hierarchies when processing unstructured point cloud data, facilitating better learning from the irregular inputs associated with 3D body scans.
+1. Patch Indexing for Efficient Learning:
+- Each patch in the transformed point cloud includes features from local aggregation and position embeddings based on their indices. This configuration allows the model to process patches more efficiently, ensuring a consistent feature size for every voxel while maintaining the necessary spatial information,.
+1. Real-World Data Integration:
+- The study integrates real-world datasets from dual-energy X-ray absorptiometry (DXA) and 3D body scans (e.g., Fit3D), establishing a robust ground truth for evaluating model performance. This integration provides a practical framework for validating the effectiveness of the proposed techniques against established measurement methods.
+1. Visual Explanations for Model Performance:
+- D3BT goes beyond merely calculating accurate body fat percentages; it also provides visual explanations that highlight the regions of the body deemed important for determining fat percentages. This capability aids in the interpretability of the model and helps users understand the model's decision-making process,.
+These novel techniques collectively enhance the D3BT model's ability to analyze 3D body scans effectively, leading to improved accuracy and reliability in body fat percentage assessment. They also represent a significant step forward in utilizing deep learning techniques for health-related applications.
+
+=====================================================================
+
+
+
+
+=====================================================================
+
+Paper 2 - Title: Maternal and Fetal Health Status Assessment by Using Machine Learning on Optical 3D Body Scans
+
+
+Abstract
+- This study explores the potential of 3D body scan data to predict adverse pregnancy outcomes and estimate clinical parameters.
+- A novel algorithm was developed with two parallel streams for extracting body shape features, along with a branch for demographic data.
+- Results indicate that 3D body shape can assist in predicting preterm labor, GDM, GH, and in estimating fetal weight, with prediction accuracies exceeding 88\%.
+
+Introduction
+- Telehealth modalities can improve prenatal care by reducing unnecessary hospital trips and interventions.
+- Maternal anthropometric measurements have a strong correlation with the health status of mothers and fetuses.
+- The study aims to apply 3D body shape analysis in maternal and fetal health status assessment.
+
+Related Work
+- Researchers explored the relationships between maternal anthropometric parameters and a range of adverse outcomes.
+- Clinicians can estimate fetal weight by using formula such as Johnson’s formula, Insler and Bernstein’s formula for a series of clinical maternal measurements.
+- Glinkowski et al. used 3D surface topography method to reveal postural changes of pregnant women.
+
+Dataset and Pre-process
+- The dataset comprises a total of 60 study participants, who were recruited at the George Washington University Medical Faculty Associates.
+- Each participant underwent optical 3D body scans between the 18th and 24th weeks of pregnancy with Fit3D optical scanner.
+- For each 3D model, the lower and upper boundaries of the abdominal region were manually labeled, and a uniform sampling of 64 level circumferences was performed.
+
+Method
+- The algorithm employs a dual-branch structure that processes body shape features from 3D scan data and demographic features separately.
+- The first stream learns spatial dependency of the abdominal level circumference through a supervised learning algorithm, Recurrent Neural Network (RNN).
+- The second stream extracts the most representative global features of the same region via an unsupervised Principal Component Analysis (PCA) algorithm.
+
+Experiments
+- Binary classification tasks were conducted to predict the risks of preterm labor, GDM, GH, and the likelihood of undergoing a cesarean section.
+- Regression tasks were conducted to estimate current fetal weight and MVP with the same inputs.
+- Different evaluation metrics were implemented for classification tasks and regression tasks.
+
+Evaluation Metrics
+- The binary classification performance of algorithms, we use metrics including accuracy, precision (also referred to as positive predictive value, PPV), recall, specificity, F1 score, and area under the receiver operating characteristic curve (AUC-ROC).
+- For AUC-ROC score, the Mann-Whitney U-test is employed as a statistical test.
+- To evaluate the regression performance of algorithms, we use Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), Mean Absolute Percent Error (MAPE, also referred to as Mean Relative Error, MRE), and Root Mean Squared Percent Error (RMSPE) as the evaluation metrics.
+Classification Performance
+- 3D body shapes captured in the second trimester can effectively be used to predict risk of preterm labor, GDM and GH, which can achieve accuracy rates exceeding 88\%.
+- The same algorithm SVC can yields better prediction performance with 3D body shape as inputs than with traditional anthropometric measurements.
+- Our algorithm shows superior performance in predicting risk of preterm labor, GDM and GH.
+
+Regression Performance
+- Our algorithm outperforms other algorithms in estimating EFW across all metrics.
+- The results establish the utility of 3D body shape in estimating fetal weight.
+- 3D body shape may not be an effective tool for estimating MVP.
+
+Ablation Study
+- PCA facilitates FC in learning more useful information from raw level circumferences, leading to a 4.28g decrease in MAE and 18.60\% increase in accuracy.
+- Using either PCA or RNN alone does not yield optimal results.
+- Our network architecture performs better with the conventional RNN.
+Conclusion
+- Maternal 3D body shape, captured during 18-24 gestational weeks, is effective in predicting GDM, GH, and preterm labor, as well as estimating fetal weight.
+- Our proposed algorithm demonstrates superior performances in these tasks.
+- Future studies could investigate methods using the entire body shape to get more accurate estimations and predictions.
+
+
+
+
+How does the machine learning model use body shape data to predict pregnancy outcomes?
+The machine learning model utilizes 3D body shape data by extracting detailed features from the scanned images, particularly focusing on the abdominal region. It employs a hybrid neural network architecture comprising two streams:
+1. Supervised Learning Stream: This branch uses Recurrent Neural Networks (RNNs) to analyze the sequential data of abdominal circumference levels sampled at 64 different points. The RNN captures the spatial dependencies and sequential patterns in the circumferences related to pregnancy outcomes.
+2. Unsupervised Learning Stream: This branch employs Principal Component Analysis (PCA) to extract global shape descriptors from the same abdominal region, capturing overall body shape characteristics that might correlate with adverse outcomes.
+These features—both sequential and global—are combined alongside basic demographic information (e.g., age, BMI) and fed into machine learning classifiers, such as Support Vector Machines (SVM), to predict the risk of conditions like preterm labor, GDM, GH, and delivery mode. The combined feature set enables the model to learn patterns and associations between body shape variations and pregnancy risks, leading to predictions with accuracy rates exceeding 88\% for some outcomes,,.
+
+What advantages do 3D body scans have over traditional prenatal tests?
+3D body scans offer several advantages over traditional prenatal tests:
+1. Non-invasive and Accessible: 3D scans are non-invasive, painless, and can be easily performed using commercial 3D scanners or even smartphone-based apps, making them accessible and convenient for at-home or remote monitoring,.
+2. Cost-effective and Quick: Unlike ultrasound or MRI, 3D body scanning is generally faster and less costly, enabling regular monitoring without the need for specialized imaging equipment or trained personnel during each assessment,.
+3. Rich Body Shape Information: 3D scans provide detailed, comprehensive information about maternal body shape, volume, and posture changes during pregnancy, which traditional anthropometric measurements or ultrasound may not fully capture,.
+4. Potential for Telehealth Integration: Because the data can be collected remotely, 3D body scans facilitate telehealth applications, allowing pregnant women, especially in rural or underserved areas, to undergo health assessments without frequent clinic visits,.
+5. Predictive Capability: As demonstrated in this study, machine learning models utilizing 3D body shape data can predict adverse pregnancy outcomes and fetal parameters with high accuracy, offering an early, supplementary assessment tool that complements existing methods,.
+6. Continuous Monitoring: Repeated scans enable tracking of body shape changes over time, which can enhance understanding of pregnancy progression and potential risks, unlike static tests such as ultrasound performed at specific moments.
+Collectively, these advantages highlight the potential of 3D body scans to supplement or, in some contexts, partially replace traditional testing, providing a safer, more adaptable, and potentially more comprehensive approach to prenatal care.
+
+
+
+
+
+
+
+
+
+\section{Conclusion}
+
+This research proposal outlines a transformative approach to autonomous driving by integrating ...
+
+%%%%%%%%% REFERENCES %%%%%%%%%
+\newpage
+{\small
+\bibliographystyle{IEEETran}
+\bibliography{IEEEfull}
+}
+\end{document}
